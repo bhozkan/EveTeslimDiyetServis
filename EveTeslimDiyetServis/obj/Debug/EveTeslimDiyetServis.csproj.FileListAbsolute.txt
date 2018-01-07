@@ -1,0 +1,92 @@
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\ApplicationInsights.config
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EveTeslimDiyetServis.dll.config
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EveTeslimDiyetServis.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EveTeslimDiyetServis.pdb
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Antlr3.Runtime.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.Web.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.WindowsServer.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.ApplicationInsights.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.Web.Infrastructure.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Newtonsoft.Json.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Helpers.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Mvc.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Optimization.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Razor.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Deployment.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Razor.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\WebGrease.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Helpers.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Mvc.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Optimization.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Razor.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Deployment.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Razor.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Antlr3.Runtime.pdb
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Newtonsoft.Json.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.ApplicationInsights.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.WindowsServer.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.Web.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.csproj.CoreCompileInputs.cache
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.pdb
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.SqlServer.dll
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.xml
+c:\users\taka\documents\visual studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.SqlServer.xml
+C:\Users\Taka\Documents\Visual Studio 2017\Projects\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.csprojResolveAssemblyReference.cache
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\ApplicationInsights.config
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EveTeslimDiyetServis.dll.config
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EveTeslimDiyetServis.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EveTeslimDiyetServis.pdb
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Antlr3.Runtime.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.SqlServer.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.Web.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Newtonsoft.Json.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Helpers.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Mvc.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Optimization.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Razor.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Razor.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\WebGrease.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\EntityFramework.SqlServer.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Helpers.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Mvc.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Optimization.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.Razor.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\System.Web.WebPages.Razor.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Antlr3.Runtime.pdb
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Newtonsoft.Json.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\bin\Microsoft.AI.Web.xml
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.csprojResolveAssemblyReference.cache
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.dll
+C:\Users\bugra\Desktop\ETDS\EveTeslimDiyetServis\EveTeslimDiyetServis\obj\Debug\EveTeslimDiyetServis.pdb

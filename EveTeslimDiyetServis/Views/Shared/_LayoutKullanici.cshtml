@@ -1,0 +1,178 @@
+﻿@using EveTeslimDiyetServis.Models
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETDS</title>
+    <!-- Bootstrap -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/fonts/stylesheet.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="fw headerAll">
+            <div class="fw headerTopAll">
+                <div class="container">
+                    <div class="fw headerTop">
+                        <div class="headerTopLeft">
+                            <div class="topAddress">
+                                <i class="fa fa-map-marker"></i>ETDS
+
+                            </div><!--.address-->
+                        </div><!--.headerTopLeft-->
+                        <div class="headerTopRight">
+                            <div class="headerSocial">
+                                <ul>
+                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div><!--.headerSocial-->
+                            <div class="headerPhone">
+                                <span class="title">Bizi arayın:</span>
+                                <span class="number">0507 498 4623</span>
+                            </div><!--.headerPhone-->
+                        </div><!--.headerTopRight-->
+                    </div><!--.headerTop-->
+                </div><!--.container-->
+            </div><!--.headerTopAll-->
+            <div class="fw headerBotAll">
+                <div class="container">
+                    <div class="fw headerBot">
+                        <div class="logo">
+                            <a href="@Url.Action("HomePage","Kullanici")"><img src="~/Images/logo.png" /></a>
+                        </div><!--.logo-->
+                        <span class="responsiveMenu"><i class="fa fa-navicon"></i></span>
+                        <div class="topMenu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">SİPARİŞ</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("CreateSiparis","Kullanici")">Sipariş Ver</a></li>
+                                            <li><a href="@Url.Action("ListSiparis","Kullanici")">Siparişlerim</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="@Url.Action("About","Kullanici")">HAKKIMIZDA</a></li>
+                                    <li><a href="@Url.Action("Prizes","Kullanici")">FİYATLAR</a></li>
+                                    <li>
+                                        <a href="#">ARAÇLAR</a>
+                                        <ul>
+                                            <li><a href="/Kullanici/Gunlukkalori">GÜNLÜK KALORİ İHTİYACI HESAPLAMA</a></li>
+                                            <li><a href="/Kullanici/Idealkilo">İDEAL KİLO HESAPLAMA</a></li>
+                                            <li><a href="/Kullanici/Belrisk">BEL ÇEVRESİNE GÖRE RİSK HESAPLAMA</a></li>
+                                            <li><a href="/Kullanici/Belkalca">BEL KALÇA ORANI HESAPLAMA</a></li>
+                                            <li><a href="/Kullanici/Vucutkitle">VÜCUT KİTLE İNDEKSİ HESAPLAMA</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="@Url.Action("Profil","Kullanici")"><i class="fa fa-user"></i>@Session["kullanici_adi"]</a></li>
+                                    <li><a href="/Account/Index"><i class="fa fa-sign-out"></i> Çıkış</a></li>
+
+                                </ul>
+                            </nav>
+                        </div><!--.topMenu-->
+                    </div><!--.headerBot-->
+                </div><!--.container-->
+            </div><!--.headerBotAll-->
+        </div><!--.headerAll-->
+    </header>
+
+
+    @RenderBody()
+
+    <footer>
+        <div class="fw footerAll">
+            <div class="container">
+                <div class="fw footer">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 footerCol">
+                            <div class="fw footerBox">
+                                <div class="fw footerLogo">
+                                    <a href="#"><img src="~/Images/footer-logo.png" /></a>
+                                </div><!--.footerLogo-->
+                                <div class="fw footerDesc">
+                                    Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır.
+
+                                </div><!--.footerDesc-->
+                            </div><!--.footerBox-->
+                        </div><!--.footerCol-->
+
+                        <div class="col-sm-12 col-md-2 footerCol">
+                            <div class="fw footerBox">
+                                <div class="fw footerTitle">
+                                    <span class="title">MENÜ</span>
+                                </div><!--.footerTitle-->
+                                <div class="fw footerMenu">
+                                    <ul>
+                                        <li><a href="/Home/AboutUs">Hakkımızda</a></li>
+                                        <li><a href="/Home/Prizes">Fiyatlar</a></li>
+                                        <li><a href="/Home/Tools">Araçlar</a></li>
+                                    </ul>
+                                </div><!--.footerMenu-->
+                            </div><!--.footerBox-->
+                        </div><!--.footerCol-->
+                        <div class="col-sm-12 col-md-2 footerCol">
+                            <div class="fw footerBox">
+                                <div class="fw footerTitle">
+                                    <span class="title">SOSYAL MEDYA</span>
+                                </div><!--.footerTitle-->
+                                <div class="fw footerSocial">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                        <li><a href="#"><i class="fa fa-instagram">Instagram</i></a></li>
+                                    </ul>
+                                </div><!--.footerMenu-->
+                            </div><!--.footerBox-->
+                        </div><!--.footerCol-->
+                        <div class="col-sm-12 col-md-4 footerCol">
+                            <div class="fw footerBox">
+                                <div class="fw footerTitle">
+                                    <span class="title">BÜLTEN</span>
+                                </div><!--.footerTitle-->
+                                <div class="fw footerNewsteller">
+                                    <div class="fw footerNewstellerBox">
+                                        <form>
+                                            <input type="text" class="newstellerText" placeholder="Mail adresi giriniz.." />
+                                            <button type="submit" class="newstellerSubmit"><i class="fa fa-envelope"></i></button>
+                                        </form>
+                                    </div><!--.box-->
+                                </div><!--.footerNewsteller-->
+                            </div><!--.footerBox-->
+                        </div><!--.footerCol-->
+                    </div><!--.row-->
+                </div><!--.footer-->
+            </div><!--.container-->
+        </div><!--.footerAll-->
+        <div class="fw footerCopyrightAll">
+            <div class="container">
+                <div class="fw footerCopyright">
+                    <span class="title">Copyright @DateTime.Now.Year- Tüm Hakları Saklıdır.</span>
+                </div><!--.footerCopyright-->
+            </div><!--.container-->
+        </div><!--.footerCopyrightAll-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="~/Scripts/jquery-3.2.1.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/selectivizr.js"></script>
+        <script src="~/Scripts/CalculeCalorie.js"></script>
+        <script src="~/Scripts/site.js"></script>
+
+
+    </footer>
+</body>
+</html>
+

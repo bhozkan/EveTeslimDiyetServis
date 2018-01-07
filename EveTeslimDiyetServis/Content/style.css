@@ -1,0 +1,262 @@
+/*  Reset.Css */
+body {font-family: 'Lato', sans-serif; font-weight:400; font-size:14px; color:#333; height:100%; background:#fff; line-height:1; margin:0px; padding:0px; position:relative; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+ul, li, ol, table, tr, td, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, button, img {font-size:100%; font:inherit;  vertical-align: baseline; padding: 0; margin: 0; border: 0; list-style: none}
+p {margin-bottom:20px;}
+img {max-width:100%}
+
+/* reset */
+.hw { -webkit-transition: all 0.3 ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.fw {width:100%; display:inline-block; float:left;}
+a {-webkit-transition: all 0.3 ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+a:hover {text-decoration:none;}
+.cover {background-size:cover; background-repeat:no-repeat; background-position:center center;}
+/* reset */
+
+/* headerTopAll */
+.headerTopAll {background:#303032; padding-top:15px; padding-bottom:15px;}
+.headerTopLeft {float:left;}
+.topAddress {float:left; color:rgba(255,255,255,0.6); font-size:15px; line-height:20px; display:inline-block;}
+.topAddress i {float:left; font-size:17px; line-height:20px; margin-right:10px; display:inline-block;}
+.headerTopRight {float:right;}
+.headerSocial {float:left; margin-right:20px;}
+.headerSocial ul {float:left;}
+.headerSocial ul li {float:left;}
+.headerSocial ul li a {float:left; font-size:20px; color:rgba(255,255,255,0.6); line-height:20px; width:30px; text-align:center; display:inline-block;}
+.headerSocial ul li.facebook a:hover {color:#3b5998}
+.headerSocial ul li.twitter a:hover {color:#1da1f2}
+.headerSocial ul li.instagram a:hover {color:#c13584}
+
+/* headerPhone */
+.headerPhone {float:left;}
+.headerPhone .title {float:left; color:rgba(255,255,255,0.6); font-size:15px; line-height:20px; margin-right:10px;}
+.headerPhone .number {color:#d15454; font-size:19px; line-height:20px; font-weight:600;}
+
+/* headerBotAll */
+.headerBotAll {padding-top:30px; padding-bottom:30px;}
+.logo {float:left;}
+.logo a {float:left;}
+.logo a img {float:left; height:40px;}
+
+/* topMenu */
+.topMenu {float:right;}
+.topMenu nav {float:left;}
+.topMenu nav>ul {float:left;}
+.topMenu nav>ul>li {float:left; position:relative;}
+.topMenu nav>ul>li:hover>a {background:#d15454; color:#fff;}
+.topMenu nav>ul>li>a {float:left; color:#434343; font-size:16px; line-height:25px; padding:7.5px 15px; display:inline-block; font-weight:700;}
+.topMenu nav>ul>li>ul {opacity:0; visibility: hidden; position:absolute; right:0; top:100%; width:400px; z-index:12; -webkit-transition: all 0.3 ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background:#fff; border:1px solid #ddd;}
+.topMenu nav>ul>li:hover ul {opacity:1; visibility: visible;}
+.topMenu nav>ul>li>ul>li {width:100%; display:inline-block; float:left; border-bottom:1px solid rgba(0,0,0,0.4)}
+.topMenu nav>ul>li>ul>li>a {width:100%; float:left; color:#434343; font-size:12px; padding:10px 15px; font-weight:700; line-height:20px}
+.topMenu nav>ul>li>ul>li>a:hover {background:#d15454; color:#fff;}
+.topMenu nav>ul>li>ul>li:last-child {border-bottom:0px;}
+
+/* homeSliderItem */
+.homeSliderItem {height:500px; position:relative; padding-top:100px;}
+.homeSliderItem:before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.4);display:inline-block;}
+.homeSliderItemBox {position:relative; z-index:12}
+.homeSliderItemBox ul {width:100%; display:inline-block; float:left; max-width:500px;}
+.homeSliderItemBox ul li {width:100%; display:inline-block; float:left; color:#fff;}
+.homeSliderItemBox ul li.title {font-weight:700; font-size:40px; line-height:60px; margin-bottom:15px; text-transform: uppercase;}
+.homeSliderItemBox ul li.desc {font-size:14px; line-height:20px; font-weight:300; margin-bottom:15px;}
+.moreLink {background:#d15454; color:#fff; font-weight:700; text-transform: uppercase; font-size:15px; line-height:20px; padding:10px 20px; border-radius:40px; float:left; display:inline-block}
+.moreLink:hover {background:#fff; color:#333;}
+.homeSliderAll .owl-controls .fa {position:absolute; left:15px; top:50%; width:40px; height:40px; line-height:40px; font-size:30px; text-align:center; color:rgba(255,255,255,0.4); margin-top:-20px; cursor:pointer; border-radius:50%; -webkit-transition: all 0.3 ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.homeSliderAll .owl-controls .fa-angle-right {right:15px; left:auto}
+.homeSliderAll .owl-controls .fa:hover {background:#fff; color:#333;}
+
+/* footerAll */
+.footerAll {background:#29292d; padding-top:40px; padding-bottom:40px; margin-top:20px}
+.footerLogo {margin-bottom:30px;}
+.footerDesc {font-size:14px; line-height:20px; color:rgba(255,255,255,0.5)}
+.footerTitle .title {color:#fff; font-size:18px; font-weight:700; text-transform: uppercase; line-height:30px; margin-bottom:30px; position:relative; width:100%; float:left; display:inline-block}
+.footerTitle .title:after {content:""; width:30px; height:2px; background:#d15454; position:absolute; left:0; bottom:-10px; display:inline-block}
+
+.footerMenu ul {width:100%; display:inline-block; float:left;}
+.footerMenu ul li {width:100%; display:inline-block; float:left; margin-bottom:10px}
+.footerMenu ul li a {float:left; color:rgba(255,255,255,0.5); font-size:15px; line-height:20px;}
+
+.footerSocial ul {width:100%; display:inline-block; float:left;}
+.footerSocial ul li {width:100%; display:inline-block; float:left; margin-bottom:10px;}
+.footerSocial ul li a {float:left; color:rgba(255,255,255,0.5); font-size:15px; line-height:20px; padding-left:20px; position:relative}
+.footerSocial ul li a i {position:absolute; left:0; top:0; width:20px; text-align:center; font-size:15px; line-height:20px;}
+
+/* footerNewstellerBox */
+.footerNewstellerBox {position:relative; overflow: hidden}
+.newstellerText {width:100%; background:#fff; height:45px; color:#333; padding-left:15px; padding-right:55px;}
+.newstellerSubmit {position:absolute; right:0; top:0; background:#d15454; color:#fff; width:45px; height:45px; font-size:20px; text-align:center; line-height:45px;}
+
+/* footerCopyrightAll */
+.footerCopyrightAll {background:#262628; padding-top:15px; padding-bottom:15px; color:rgba(255,255,255,0.5); font-size:15px; line-height:20px; text-align:center}
+
+/* headerBot */
+.headerBot {position:relative;}
+.responsiveMenu {position:absolute; right:0; top:0; color:#434343; font-size:30px; cursor:pointer; display:none;}
+
+/* sectionTitle */
+.sectionTitle {padding-top:40px; padding-bottom:60px;}
+.sectionTitle .title {width:100%; text-align:center; color:#434343; font-size:30px; font-weight:700; display:inline-block; position:relative}
+.sectionTitle .title:before {content:""; width:100px; height:2px; background:#d15454; left:0; right:0; margin-left:auto; margin-right:auto; display:inline-block; position:absolute; bottom:-15px}
+
+/* servicesBox */
+.servicesColBox {border:1px solid #ddd; margin-bottom:30px; background:#fff}
+.servicesColBox ul {width:100%; display:inline-block; float:left;}
+.servicesColBox ul li {width:100%; display:inline-block; float:left;}
+.servicesColBox ul li.image a {width:100%; height:100px; display:inline-block}
+.servicesColBox ul li.title {height:40px; padding:15px; margin-bottom:10px}
+.servicesColBox ul li.title a {float:left; color:#434343; font-size:15px; line-height:20px; display:inline-block}
+.servicesColBox ul li.title .price {float:right; color:#d15454; font-size:17px; line-height:20px; display:inline-block;}
+.servicesColBox ul li.desc {padding-left:15px; padding-right:15px;  color:#434343; font-size:15px; line-height:20px; font-weight:300; height:80px;}
+.servicesColBox ul li.more {border-top:1px solid #ddd; padding:15px;}
+.moreOther {background:#d15454; color:#fff; font-size:15px; line-height:20px; display:inline-block; padding:10px; border-radius:10px; float:right; width:100%; text-align:center}
+.moreOther i {float:left; font-size:15px; line-height:20px; display:inline-block; margin-right:10px;}
+.moreOther:hover {background:#434343; color:#fff}
+
+/* newModal" */
+.newModal {position:relative}
+.newModalBox {max-width:600px; margin:0 auto; display:table; float:none; width:100%}
+.servicesColBox.hasModal ul li.desc {height:auto; padding-bottom:30px}
+.newModalDialog {width:100%; display:inline-block; position:relative}
+
+/* closeButton */
+.closeButton {position:absolute; right:20px; top:0px; background:#d15454; color:#fff; font-size:15px; line-height:20px; padding:10px 20px; border-radius:5px; cursor:pointer; -webkit-transition: all 0.3 ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.closeButton:hover {background:#fff; color:#333;}
+
+/* newModal */
+.newModal {position:relative}
+
+/* pageTitleAll */
+.pageTitleAll {background:url(../images/page-bg.png); padding-top:40px; padding-bottom:40px; margin-bottom:20px;}
+.pageTitle .title {width:100%; text-align:center; color:#fff; font-size:30px; font-weight:700;}
+
+/* pricingTableTop */
+.pricingTableTop {}
+.pricingTableTop ul {float:left; display:inline-block; background:#ebebeb}
+.pricingTableTop ul li {float:left; border-right:1px solid rgba(0,0,0,0.1)}
+.pricingTableTop ul li:last-child {border-right:0px}
+.pricingTableTop ul li a {font-size:14px; line-height:20px; padding:10px; color:#434343; display:inline-block;}
+.pricingTableTop ul li.active a {background:#c2c2c2}
+
+/* pricingTableBoxInfo */
+.pricingTableBoxInfo {width:100%; text-align:center; color:#333; font-size:14px; line-height:20px; text-align:center; padding-top:10px; padding-bottom:10px}
+.pricingTableBot {background:#c2c2c2}
+
+/* pricingTableDetail */
+.pricingTableBot {padding-left:30px; padding-right:30px; }
+.piricingTableBoxTabs {}
+.pricingTableDetail ul {width:100%; display:inline-block; background:#fff; float:left; margin-bottom:20px}
+.pricingTableDetail ul li {width:100%; display:inline-block; float:left;}
+.pricingTableDetail ul li.title {background:#d15454; color:#fff; font-size:15px; line-height:20px; padding:15px; text-align:center; font-weight:700;}
+.pricingTableDetail ul li.desc {font-size:15px; line-height:20px; text-align:center; color:#d15454; padding:10px; text-align:center; border-top:1px solid #ddd;}
+.pricingTableDetail ul li.text {text-align:center; padding:10px; font-size:14px; line-height:20px; color:#333;}
+
+/* pagecontent */
+.pageContent {font-size:14px; line-height:20px; color:#333;}
+
+/* purchaseButton */
+.purchaseButton {float:right; background:#4a902d; font-weight:700; font-size:15px; line-height:20px; padding:10px 15px; border-radius:5px; color:#fff; margin-bottom:15px}
+.purchaseButton:hover {background:#fff; color:#333;}
+
+/* formBox */
+.formBox {margin-bottom:30px}
+.formBox ul {border:1px solid #ddd; padding:20px; width:100%; max-width:500px; margin:0 auto; display:table;}
+.formBox ul li {width:100%; display:inline-block; margin-bottom:20px;}
+.formBox ul li:last-child {margin-bottom:0px}
+.formText {width:100%; border:1px solid #ddd; height:40px; padding-left:15px; padding-right:15px; color:#333; float:left;}
+.formSelect {width:100%; border:1px solid #ddd; height:40px; padding-left:15px; padding-right:15px; border-radius:0px!important}
+.selectMultiple {width:100%; border:1px solid#ddd;}
+.formBox ul li .title {width:100%; font-weight:700; color:#333; font-size:15px; line-height:20px; margin-bottom:10px; display:inline-block; float:left}
+.formSelect {width:100%; border:1px solid #ddd; padding-left:15px; padding-right:15px; color:#333; height:40px; background:#fff;}
+.formSubmit {background:#d15454; color:#fff; font-size:15px; line-height:30px; height:40px; padding:5px 20px; -webkit-transition: all 0.3 ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.formSubmit:hover, .formSubmita:hover {background:#333; color:#fff;}
+.formSubmita {background:#d15454; color:#fff; font-size:15px; line-height:30px; height:40px; padding:5px 20px; display:inline-block}
+
+/* formResult */
+.formResult {text-align:center; }
+
+/* adminAll */
+.adminMenu {position:fixed; left:0; top:0; width:280px; background:#000; height:100%;}
+.adminMenuTitle {padding:10px 10px; text-align:center; font-weight:700; font-size:14px; line-height:20px; color:#fff; border-bottom:1px solid rgba(255,255,255,0.1); background:#333}
+
+/* adminMenuBox */
+.adminMenuBox ul {width:100%; display:inline-block; float:left;}
+.adminMenuBox ul li {width:100%; display:inline-block; float:left; border-bottom:1px solid rgba(255,255,255,0.1)}
+.adminMenuBox ul li a {width:100%; float:left; display:inline-block; color:#fff; font-size:14px; line-height:20px; padding:10px 15px;}
+.adminMenuBox ul li a:hover {background:#ffff; color:#333;}
+
+/* adminContent */
+.adminContent {background:#fff; border:1px solid #ddd; padding:20px;}
+.adminContentTitle {width:100%; background:#000; color:#fff; font-size:14px; line-height:20px; padding:10px; margin-bottom:20px; }
+.admin {padding-left:300px; background:#f5f5f5; padding-top:20px;}
+.adminFormBox ul {max-width:100%}
+
+@media (min-width:1200px) {
+.container {width:1170px;}
+}
+
+@media (min-width:993px) {
+.topMenu {display:inline-block!important}
+
+}
+
+@media (max-width:992px) {
+.responsiveMenu {display:inline-block;}
+.topMenu {display:none; width:100%; float:left;}
+.topMenu nav {width:100%; display:inline-block;}
+.topMenu nav>ul, .topMenu nav>ul>li, .topMenu nav>ul>li>a {width:100%; display:inline-block;}
+.topMenu nav>ul>li>ul {position:relative; width:100%; opacity:1; visibility: visible; display:none;}
+.topMenu nav>ul>li:hover>ul {display:inline-block}
+.headerTopLeft {display:none;}
+.headerSocial {display:none;}
+.logo a img {height:30px;}
+.headerBotAll {padding-top:15px; padding-bottom:15px}
+.homeSliderItem {height:auto; padding-top:40px; padding-bottom:40px;}
+.homeSliderItemBox ul li.title {font-size:20px; line-height:25px}
+}
+
+@media (max-width:500px) {
+.headerTopLeft {display:none;}
+.headerSocial {display:none;}
+.pricingTableTop ul {width:100%}
+.pricingTableTop ul li {width:100%}
+.pricingTableTop ul li a {width:100%}
+.pricingTableBot {padding-left:15px; padding-right:15px}
+}
+
+/* other reset */
+::-webkit-input-placeholder { color:inherit}
+::-moz-placeholder { color:inherit } /* firefox 19+ */
+:-ms-input-placeholder { color:inherit } /* ie */
+input:-moz-placeholder { color:inherit }
+
+
+a:focus,
+select:focus,
+			textarea:focus,
+input[type="text"]:focus,
+input[type="submit"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color:inherit;
+  box-shadow:inset;
+  outline: 0 none;
+  text-decoration:none;
+}
+
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+}
+/* other reset */

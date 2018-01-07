@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ETDS.Models.Siparis>
+@{
+    ViewBag.Title = "ListSiparis";
+    Layout = "~/Views/Shared/_LayoutAsci.cshtml";
+}
+
+<div>
+    <fieldset>
+        <legend>Alınan Siparişler</legend>
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayName("Sipariş No")
+                </th>
+                <th>
+                    @Html.DisplayName("Paket(cal)")
+                </th>
+                <th>
+                    @Html.DisplayName("Öğün")
+                </th>
+                <th>
+                    @Html.DisplayName("İl")
+                </th>
+                <th>
+                    @Html.DisplayName("Tarih")
+                </th>
+                <th>
+                    @Html.DisplayName("Durum")
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Paket.Aciklama)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ogun.Aciklama)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kullanici.Il.Ad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tarih)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SiparisDurum.Durum)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Siparişi Onayla", "SiparisOnay", new { id = item.Id }, new { @class = "btn btn-info", data_toggle = "modal", data_target = "#siparisOnay", data_dismiss = "modal", data_backdrop = "static", data_keyboard = "false" })|
+                        @Html.ActionLink("Kuryeye Gönder", "SiparisGonder", new { id = item.Id }, new { @class = "btn btn-warning" }) 
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </fieldset>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="siparisOnay">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="modal-content">
+                @Html.Partial("SiparisOnay", new ETDS.Models.Siparis(), new ViewDataDictionary { { "Id", Model.GetEnumerator() } })
+            </div>
+        </div>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

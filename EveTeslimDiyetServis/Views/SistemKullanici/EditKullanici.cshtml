@@ -1,0 +1,129 @@
+﻿@model ETDS.Models.Kullanici
+
+@{
+    ViewBag.Title = "KullaniciDuzenle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@using (Html.BeginForm("EditKullanici", "SistemKullanici", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Kullanıcı Düzenle</legend>
+
+        <div class="form-group">
+            <label for="label" class="control-label">Ad</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.Ad, new { @class = "form-control", @type = "text" })
+                        @Html.ValidationMessageFor(model => model.Ad)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="label" class="control-label">Soyad</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.Soyad, new { @class = "form-control", @type = "text" })
+                        @Html.ValidationMessageFor(model => model.Soyad)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="label" class="control-label">Kullanıcı Adı</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.KullaniciAd, new { @class = "form-control", @type = "text" })
+                        @Html.ValidationMessageFor(model => model.KullaniciAd)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="label" class="control-label">Şifre</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.Sifre, new { @class = "form-control", @type = "password" })
+                        @Html.ValidationMessageFor(model => model.Sifre)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="label" class="control-label">Cinsiyet</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.Cinsiyet, new { @class = "form-control", @type = "text" })
+                        @Html.ValidationMessageFor(model => model.Cinsiyet)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Rol</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.DropDownList("RolId", (List<SelectListItem>)ViewBag.RolListEdit, "Rol Seçiniz..", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.RolId)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="label" class="control-label">E-Posta</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.EPosta, new { @class = "form-control", @type = "email" })
+                        @Html.ValidationMessageFor(model => model.EPosta)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="label" class="control-label">Telefon</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.Gsm, new { @class = "form-control", @type = "text" })
+                        @Html.ValidationMessageFor(model => model.Gsm)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">İl</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.DropDownList("IlId", (List<SelectListItem>)ViewBag.IlListEdit, "İl Seçiniz..", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.IlId)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <div class="form-group col-md-offset-3">
+            <div class="row">
+                <a href="@Url.Action("ListKullanici","SistemKullanici")" class="btn btn-default btn-large">İPTAL</a>    <input type="submit" value="EKLE" class="btn btn-primary btn-large" style="width:100px;" />
+            </div>
+        </div>
+    </fieldset>
+}
+
+

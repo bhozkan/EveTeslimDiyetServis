@@ -1,0 +1,53 @@
+﻿@model ETDS.Models.Siparis
+
+@{
+    ViewBag.Title = "SiparisGonder";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@using (Html.BeginForm("SiparisGonder", "Asci", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+    <fieldset>
+        <legend>Sipariş Gönder</legend>
+        <div class="orm-group">
+            <div class="alert alert-info" style="width:75%;">Lütfen sipariş numarasını ve dağıtımı yapacak kuryeyi seçiniz.</div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Sipariş No</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.DropDownList("Id", (List<SelectListItem>)ViewBag.SiparisList, "Sipariş Seçiniz..", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Id)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Kurye</label>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        @Html.DropDownList("KuryeId", (List<SelectListItem>)ViewBag.KuryeList, "Kurye Seçiniz..", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.KuryeId)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <div class="form-group col-md-offset-3">
+            <div class="row">
+                <a href="@Url.Action("ListSiparisAlinan","Asci")" class="btn btn-default btn-large">İPTAL</a>    <input type="submit" value="EKLE" class="btn btn-primary btn-large" style="width:100px;" />
+            </div>
+        </div>
+    </fieldset>
+}
+
+
+

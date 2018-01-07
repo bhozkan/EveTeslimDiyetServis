@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "BelKalca";
+    Layout = "~/Views/Shared/_LayoutKullanici.cshtml";
+}
+
+
+
+<div class="fw pageTitleAll">
+    <div class="container">
+        <div class="fw pageTitle">
+            <h1 class="title">BEL KALÇA ORANI HESAPLAMA</h1>
+        </div><!--.pageTitle-->
+    </div><!--.container-->
+</div><!--.pageTitleAll-->
+
+<div class="container">
+    <div class="fw formBox">
+        <ul>
+
+            <li><span class="title">BEL ÇEVRESİ (CM)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="belcevresi2" /></li>
+            <li><span class="title">KALÇA ÇEVRESİ (CM)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="kalcasevresi" /></li>
+            <li><span class="title">CİNSİYETİNİZ</span><select class="formSelect" id="gender4"><option value="">Seçiniz</option><option value="1">Erkek</option><option value="2">Kadın</option></select></li>
+            <li><a href="javascript:void(0)" class="formSubmita" id="calculaterisk">HESAPLA</a></li>
+        </ul>
+    </div><!--.formBox-->
+    <div class="fw formResult">
+        <p class="caloriebox" id="idealobsk"></p>
+        <p id="obsktext" style="font-size:14px;padding:0px;color:red"></p>
+    </div><!--.formResult-->
+</div><!--.container-->

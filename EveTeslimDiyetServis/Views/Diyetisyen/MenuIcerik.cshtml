@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ETDS.Models.YemekMenu>
+
+@{
+    ViewBag.Title = "YemekList";
+    Layout = "~/Views/Shared/_LayoutDiyetisyen.cshtml";
+}
+
+<fieldset>
+    <legend>@ViewBag.MenuAd Adlı Menüye Ait Yemekler</legend>
+    <!--Yemek Ekleme Bölümü-->
+    <a class="btn btn-info" id="showhidetrigger" href="#">Yemek Ekle</a>
+    <div id="showhidetarget">
+        <p> @Html.Partial("IcerikYemekEkle",new ETDS.Models.YemekMenu(), new ViewDataDictionary{ { "MenuId" ,ViewBag.MenuId } }) </p>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#showhidetarget').hide();
+
+            $('a#showhidetrigger').click(function () {
+                $('#showhidetarget').toggle(400);
+            });
+        });
+    </script>
+    <br />
+    <br />
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+            </th>
+            <th>
+                @Html.DisplayName("Yemek")
+            </th>
+            <th></th>
+        </tr>
+        @{int rowNo = 0;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @(rowNo += 1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yemek.Ad)
+                </td>
+                <td>
+                    @Html.ActionLink("Sil", "DeleteIcerikYemek", new { id = item.Id }, new { @class = "btn btn-danger btn-md", data_toggle = "modal", data_target = "#silModal", data_id = @item.Id, data_dismiss = "modal", data_backdrop = "static", data_keyboard = "false" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</fieldset>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="silModal">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="modal-content">
+                @Html.Partial("DeleteIcerikYemek", new ETDS.Models.Yemek(), new ViewDataDictionary { { "Id", Model.GetEnumerator() } })
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div><!-- /.modal -->

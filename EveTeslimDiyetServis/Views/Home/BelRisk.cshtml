@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "BelRisk";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="fw pageTitleAll">
+    <div class="container">
+        <div class="fw pageTitle">
+            <h1 class="title">BEL ÇEVRESİNE GÖRE RİSK HESAPLAMA</h1>
+        </div><!--.pageTitle-->
+    </div><!--.container-->
+</div><!--.pageTitleAll-->
+
+<div class="container">
+    <div class="fw formBox">
+        <ul>
+
+            <li><span class="title">BEL ÇEVRESİ (CM)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="belcevresi1belcev" /></li>
+            <li><span class="title">CİNSİYETİNİZ</span><select class="formSelect" id="genderbelcev"><option value="">Seçiniz</option><option value="1">Erkek</option><option value="2">Kadın</option></select></li>
+            <li><a href="javascript:void(0)" class="formSubmita" id="calculateobsbelcev">HESAPLA</a></li>
+        </ul>
+    </div><!--.formBox-->
+    <div class="fw formResult">
+        <p class="caloriebox" id="idealobs"></p>
+        <p id="obstext" style="font-size:14px;padding:0px;color:red"></p>
+    </div><!--.formResult-->
+</div><!--.container-->

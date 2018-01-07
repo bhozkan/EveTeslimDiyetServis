@@ -1,0 +1,56 @@
+﻿@model ETDS.Models.Diyetisyen
+
+@{
+    ViewBag.Title = "DiyetisyenEkle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@using (Html.BeginForm("CreateDiyetisyen", "SistemKullanici", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+<fieldset>
+    <legend>Diyetisyen Ekle</legend>
+    <div class="orm-group">
+        <div class="alert alert-info" style="width:75%;">Eklemek istiğiniz diyetisyeni sistemde kayıtlı kullanıcılardan seçmeniz gerekmektedir..</div>
+    </div>
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-warning">@ViewBag.Error</div>
+    }
+    <div class="form-group">
+        <label class="control-label">Rol</label>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-md-5">
+                    @Html.DropDownList("RolId", (List<SelectListItem>)ViewBag.RolList, "Rol Seçiniz..", new { @class = "form-control", @disabled = "disabled" })
+                    @Html.ValidationMessageFor(model => model.Kullanici.RolId)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Kullanıcı</label>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-md-5">
+                    @Html.DropDownList("KullaniciId", (List<SelectListItem>)ViewBag.KullaniciList, "Diyetisyen Seçiniz..", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.KullaniciId)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="form-group col-md-offset-3">
+        <div class="row">
+            <a href="@Url.Action("ListDiyetisyen","SistemKullanici")" class="btn btn-default btn-large">İPTAL</a>    <input type="submit" value="EKLE" class="btn btn-primary btn-large" style="width:100px;" />
+        </div>
+    </div>
+</fieldset>
+}
+
+

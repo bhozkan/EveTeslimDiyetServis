@@ -1,0 +1,68 @@
+﻿@model ETDS.Models.Siparis
+@{
+    ViewBag.Title = "CreateSiparis";
+    Layout = "~/Views/Shared/_LayoutKullanici.cshtml";
+}
+
+
+@using (Html.BeginForm("CreateSiparis", "Kullanici", FormMethod.Post))
+{
+    <div class="fw pageTitleAll">
+        <div class="container">
+            <div class="fw pageTitle">
+                <h1 class="title">Sipariş Ver</h1>
+            </div><!--.pageTitle-->
+        </div><!--.container-->
+    </div><!--.pageTitleAll-->
+
+    @Html.ValidationSummary(false)
+
+    <div class="container">
+        <div class="fw formBox">
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+            @if (ViewBag.Success != null)
+            {
+                <div class="alert alert-success">@ViewBag.Success</div>
+            }
+
+            <div class="form-horizontal">
+                @Html.HiddenFor(model => model.KullaniciId)
+
+                <div class="col-md-offset-2 col-md-6">
+                    <div class="form-group">
+                        @Html.Label("Paket", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.DropDownList("PaketId", (List<SelectListItem>)ViewBag.PaketList, "Paket Seçiniz..", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.PaketId)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Öğün", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.DropDownList("OgunId", (List<SelectListItem>)ViewBag.OgunList, "Öğün Seçiniz..", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.OgunId)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Adres", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.DropDownList("Adres", (List<SelectListItem>)ViewBag.AdresList, "Adres Seçiniz..", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Adres)
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="form-group pull-right col-md-offset-8">
+                        <a href="@Url.Action("Index","Kullanici")" class="btn btn-default">İPTAL</a> <button type="submit" class="btn btn-danger" onclick="KullaniciEkle_click">KAYIT OL</button>
+                    </div>
+                </div>
+            </div><!--.formBox-->
+        </div><!--.container-->
+    </div>
+}
+

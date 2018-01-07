@@ -1,0 +1,62 @@
+﻿@model ETDS.Models.Kullanici
+@{
+    ViewBag.Title = "Profiliniz";
+    Layout = "~/Views/Shared/_LayoutKullanici.cshtml";
+}
+}
+
+<div class="container">
+
+    <div class="row">
+        <h2>@ViewBag.Title</h2>
+        <hr />
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-2">
+            @if (Model.ProfilResmi == null)
+            {
+                <img src="~/Images/user.png" class="img-circle" width="128" height="128" />
+            }
+            else
+            {
+                <img src="~/Images/@Model.ProfilResmi" class="img-circle" width="128" height="128" />
+            }
+        </div>
+
+        <div class="col-md-8">
+            <br />
+            <h5><b>Kullanıcı Adı : </b>@Model.KullaniciAd</h5>
+            <h5><b>Kullanıcı E-posta : </b>@Model.EPosta</h5>
+            <br />
+            <h5><a href="#">Daha Fazla... </a></h5>
+        </div>
+        <div class="col-md-2 text-right">
+            <div class="btn-group">
+                <a class="btn dropdown-toggle btn-info" data-toggle="dropdown" href="#">
+                    <span class="glyphicon glyphicon-cog">
+                        &nbsp;
+                        Options
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="@Url.Action("EditProfil","Kullanici")">
+                            <span class="glyphicon glyphicon-edit">&nbsp;</span>
+                            Düzenle
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="@Url.Action("DeleteProfile")" onclick="return confirm('Hesabınızı silmek istediğinize emin misiniz?');">
+                            <span class="glyphicon glyphicon-trash">&nbsp;</span>
+                            Sil
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

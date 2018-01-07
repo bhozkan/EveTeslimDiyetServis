@@ -1,0 +1,23 @@
+﻿@model ETDS.Models.Kullanici
+@using (Html.BeginForm("DeleteKullanici", "SistemKullanici", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Kullanıcı Sil</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <p>Kullanıcıyı silmeyi onaylıyor musunuz?</p>
+                @Html.HiddenFor(model => model.Id)
+            </div>
+
+            <div class="pull-right clearfix">
+                <input type="submit" value="SİL" class="btn btn-primary btn-md" />  <a href="@Url.Action("ListKullanici", "SistemKullanici")" class="btn btn-default btn-md">İPTAL</a>
+            </div>
+        </div>
+    </div>
+}
+

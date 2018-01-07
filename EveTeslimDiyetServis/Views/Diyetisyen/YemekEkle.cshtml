@@ -1,0 +1,35 @@
+﻿@model ETDS.Models.Yemek
+
+@using (Html.BeginForm("YemekEkle", "Diyetisyen", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="editor-field">
+                @Html.HiddenFor(model => model.Id)
+                @Html.ValidationMessageFor(model => model.Id)
+            </div>
+
+            <div class="form-group">
+                <label for="kategori" class="col-sm-1 control-label">Yemek</label>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(model => model.Ad, new { @class = "form-control", @id = "yemek", placeholder = "Yemek ekleyiniz." })
+                    @Html.ValidationMessageFor(model => model.Ad)
+                </div>
+
+                <label for="kategori" class="col-sm-1 control-label">Açıklama</label>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(model => model.Aciklama, new { @class = "form-control", @id = "aciklama", placeholder = "Açıklama ekleyiniz." })
+                    @Html.ValidationMessageFor(model => model.Aciklama)
+                </div>
+                <div class="col-sm-2">
+                    <button type="submit" class="btn btn-primary">EKLE</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+}
+

@@ -1,0 +1,58 @@
+﻿
+@model IEnumerable<ETDS.Models.Siparis>
+@{
+    ViewBag.Title = "ListSiparis";
+    Layout = "~/Views/Shared/_LayoutKurye.cshtml";
+}
+
+<div>
+    <fieldset>
+        <legend>Tamamlanan Siparişler</legend>
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayName("Sipariş No")
+                </th>
+                <th>
+                    @Html.DisplayName("Ad")
+                </th>
+                <th>
+                    @Html.DisplayName("Soyad")
+                </th>
+                <th>
+                    @Html.DisplayName("Adres")
+                </th>
+                <th>
+                    @Html.DisplayName("Tarih")
+                </th>
+                <th>
+                    @Html.DisplayName("Durum")
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kullanici.Ad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kullanici.Soyad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kullanici.Adres)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tarih)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SiparisDurum.Durum)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </fieldset>
+</div>

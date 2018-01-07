@@ -1,0 +1,144 @@
+﻿@model ETDS.Models.Kullanici
+
+@{
+    ViewBag.Title = "Profil Düzenle";
+    Layout = "~/Views/Shared/_LayoutKullanici.cshtml";
+}
+
+<link href="~/Content/validation-summary.css" rel="stylesheet" />
+
+<div class="container">
+
+    <div class="row">
+        <h2>@ViewBag.Title</h2>
+        <hr />
+    </div>
+
+    @if (ViewBag.Success != null)
+    {
+        <div class="alert alert-success">@ViewBag.Success</div>
+    }
+
+    <div class="row">
+        @using (Html.BeginForm("EditProfil", "Kullanici", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="form-horizontal">
+
+                <div class="col-md-3">
+                    @if (Model.ProfilResmi == null)
+                    {
+                        <img src="~/Images/user.png" class="img-circle" width="128" height="128" />
+                    }
+                    else
+                    {
+                        <img src="~/Images/@Model.ProfilResmi" class="img-circle" width="128" height="128" />
+                    }
+
+                    @Html.HiddenFor(model => model.ProfilResmi)
+                    <br /><br />
+                    <input type="file" name="ProfileImage" id="ProfileImage" class="form-control" /><br />
+                    <span class="glyphicon glyphicon-info-sign">&nbsp;</span>
+                    <span><i>Lütfen jpg, jpeg ya da png formatı kullanın.</i></span>
+                </div>
+
+                <div class="col-md-5">
+
+                    @Html.ValidationSummary(false)
+                    @Html.HiddenFor(model => model.Id)
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Ad, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Ad, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Soyad, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Soyad, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.KullaniciAd, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.KullaniciAd, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Sifre, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Sifre, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EPosta, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.EPosta, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Cinsiyet, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.DropDownListFor(model => model.Cinsiyet, new SelectList(new string[] { "Erkek", "Kadın" }, ""), htmlAttributes: new { @class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("İl", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.DropDownList("IlId", (List<SelectListItem>)ViewBag.IlList, "İl Seçiniz..", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.IlId)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Boy(cm)", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Boy, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Kilo, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Kilo, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Gsm, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Gsm, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Adres, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Adres, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="pull-right col-md-offset-6">
+                            @Html.ActionLink("Geri Dön", "Profil", "Kullanici", null, new { @class = "btn btn-default" })
+                            <input type="submit" value="Kaydet" class="btn btn-danger" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    &nbsp;
+                </div>
+            </div>
+        }
+    </div>
+
+</div>

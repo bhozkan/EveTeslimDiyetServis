@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ETDS.Models.Kurye>
+
+@{
+    ViewBag.Title = "KuryeList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<fieldset>
+    <legend>Kuryeler</legend>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+
+            </th>
+            <th>
+                @Html.DisplayName("Ad")
+            </th>
+            <th>
+                @Html.DisplayName("Kullanıcı Adı")
+            </th>
+            <th>
+                @Html.DisplayName("Cinsiyet")
+            </th>
+            <th>
+                @Html.DisplayName("Bağlı Olduğu Aşçı")
+            </th>
+            <th>
+                @Html.DisplayName("İl")
+            </th>
+            <th></th>
+        </tr>
+        @{int rowNo = 0;}
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @(rowNo += 1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kullanici.Ad) @Html.DisplayFor(modelItem => item.Kullanici.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kullanici.KullaniciAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kullanici.Cinsiyet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsciAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kullanici.Il.Ad)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "EditKurye", new { id = item.Id }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Sil", "DeleteKurye", new { id = item.Id }, new { @class = "btn btn-danger btn-md", data_toggle = "modal", data_target = "#kuryeSil", data_dismiss = "modal", data_backdrop = "static", data_keyboard = "false" })
+            </td>
+        </tr>
+        }
+
+    </table>
+</fieldset>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="kuryeSil">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="modal-content">
+                @Html.Partial("DeleteKurye", new ETDS.Models.Kurye(), new ViewDataDictionary { { "Id", Model.GetEnumerator() } })
+            </div>
+        </div>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

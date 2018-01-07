@@ -1,0 +1,79 @@
+﻿@model ETDS.Models.Kullanici
+
+@{
+    ViewBag.Title = "KullaniciKayit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("Register", "Home", FormMethod.Post))
+{
+    <div class="fw pageTitleAll">
+        <div class="container">
+            <div class="fw pageTitle">
+                <h1 class="title">KAYIT OL</h1>
+            </div><!--.pageTitle-->
+        </div><!--.container-->
+    </div><!--.pageTitleAll-->
+
+    @Html.ValidationSummary(false)
+
+    <div class="container">
+        <div class="fw formBox">
+            @if(ViewBag.Error !=null)
+            {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+            @if(ViewBag.Success !=null)
+            {
+            <div class="alert alert-success">@ViewBag.Success</div>
+            }
+
+            <ul>
+
+                <li>
+                    <span class="title" aria-hidden="true">KULLANICI ADI</span>
+                    @Html.TextBoxFor(model => model.KullaniciAd, new { @class = "form-control", placeholder = "Kullanıcı adınız" })
+                </li>
+
+                <li>
+                    <span class="title" aria-hidden="true">E-POSTA</span>
+                    @Html.TextBoxFor(model => model.EPosta, new { @class = "form-control", placeholder = "E-posta adresiniz" })
+                </li>
+
+                <li>
+                    <span class="title" aria-hidden="true">E-POSTA TEKRAR</span>
+                    @Html.TextBox("EpostaTekrar", "", new { @class = "form-control", placeholder = "E-posta tekrar", @name = "EpostaTekrar" })
+                </li>
+
+                <li>
+                    <span class="title" aria-hidden="true">ŞİFRE</span>
+                    @Html.TextBoxFor(model => model.Sifre, new { @class = "form-control", placeholder = "Şifreniz", type = "password", @id = "sifre" })
+                </li>
+
+                <li>
+                    <span class="title" aria-hidden="true">ŞİFRE TEKRAR</span>
+                    @Html.TextBox("SifreTekrar", "", new { @class = "form-control", placeholder = "Şifreniz", type = "password", @name = "SifreTekrar" })
+                </li>
+
+
+                <li class="form-group col-md-offset-8">
+                    <a href="@Url.Action("Index","Home")" class="btn btn-default">İPTAL</a> <button type="submit" class="btn btn-danger" onclick="KullaniciEkle_click">KAYIT OL</button>
+                </li>
+            </ul><!--.formBox-->
+        </div><!--.container-->
+    </div>
+}
+
+<script>
+    function KullaniciEkle_click() {
+        debugger;
+        var sifre = $("#sifre").val();
+        var sifreTekrar = $("#sifreTekrar").val();
+
+        if (sifre != sifreTekrar) {
+            alert("Girilen şifreler eşleşmiyor.");
+        }
+    }
+</script>
+

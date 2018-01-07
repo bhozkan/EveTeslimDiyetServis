@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "IdealKilo";
+    Layout = "~/Views/Shared/_LayoutKullanici.cshtml";
+}
+
+<div class="fw pageTitleAll">
+    <div class="container">
+        <div class="fw pageTitle">
+            <h1 class="title">İDEAL KİLO HESAPLAMA</h1>
+        </div><!--.pageTitle-->
+    </div><!--.container-->
+</div><!--.pageTitleAll-->
+
+<div class="container">
+    <div class="fw formBox">
+        <ul>
+
+            <li><span class="title">YAŞ</span><input type="number" pattern="[0-9]*" class="formText" id="yasideal" /></li>
+            <li><span class="title">BOYUNUZ (CM)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="boyunuzideal" /></li>
+            <li><span class="title">KİLONUZ (KG)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="kilonuzideal1" /></li>
+            <li><span class="title">CİNSİYETİNİZ</span><select class="formSelect" id="cinsiyetideal"><option value="">Seçiniz</option><option value="1">Erkek</option><option value="2">Kadın</option></select></li>
+            <li><a href="javascript:void(0)" class="formSubmita" id="calculateideal">HESAPLA</a></li>
+        </ul>
+    </div><!--.formBox-->
+    <div class="fw formResult">
+        <p class="caloriebox1" id="idealvalue"></p>
+    </div><!--.formResult-->
+</div><!--.container-->

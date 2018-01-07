@@ -1,0 +1,26 @@
+﻿
+@model ETDS.Models.Siparis
+@using (Html.BeginForm("SiparisOnay", "Kurye", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sipariş Onay</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <p>Siparişi teslim ettiğinizi onaylıyor musunuz ?</p>
+                @Html.HiddenFor(model => model.Id)
+            </div>
+
+            <div class="pull-right clearfix">
+                <input type="submit" value="ONAYLA" class="btn btn-primary btn-md" />  <a href="@Url.Action("ListSiparisAlinan", "Kurye")" class="btn btn-default btn-md">İPTAL</a>
+            </div>
+        </div>
+    </div>
+}
+
+
+

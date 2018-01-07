@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "VucutKitle";
+    Layout = "~/Views/Shared/_LayoutKullanici.cshtml";
+}
+
+<div class="fw pageTitleAll">
+    <div class="container">
+        <div class="fw pageTitle">
+            <h1 class="title">VÜCUT KİTLE İNDEKSİ HESAPLAMA</h1>
+        </div><!--.pageTitle-->
+    </div><!--.container-->
+</div><!--.pageTitleAll-->
+
+<div class="container">
+    <div class="fw formBox">
+        <ul>
+
+            <li><span class="title">KİLONUZ (KG)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="kilo" /></li>
+            <li><span class="title">BOYUNUZ (CM)</span><input type="number" placeholder="" class="formText" pattern="[0-9]*" id="boy" /></li>
+            <li><a href="javascript:void(0)" class="formSubmita" id="calculatebmi">HESAPLA</a></li>
+        </ul>
+    </div><!--.formBox-->
+    <div class="fw formResult">
+        <p class="caloriebox" id="bmivalue"></p>
+        <p id="bmitext" style="font-size:14px;padding:0px;color:red"></p>
+    </div><!--.formResult-->
+</div><!--.container-->

@@ -1,0 +1,40 @@
+﻿@model ETDS.Models.Kullanici
+
+@{
+    ViewBag.Title = "Login";
+}
+<link href="~/Content/Login-Register.css" rel="stylesheet" />
+
+@using (Html.BeginForm("Login", "Account",FormMethod.Post))
+{
+    <div class="fw pageTitleAll">
+        <div class="container">
+            <div class="fw pageTitle">
+                <h1 class="title">GİRİŞ YAP</h1>
+            </div><!--.pageTitle-->
+        </div><!--.container-->
+    </div><!--.pageTitleAll-->
+
+    @Html.ValidationSummary(false)
+
+
+
+    <div class="container">
+        <div class="fw formBox">
+            <ul>
+                <li>@ViewBag.Error</li>
+                <li>
+                    <span class="title" aria-hidden="true">KULLANICI ADI</span>
+                    @Html.TextBoxFor(model => model.KullaniciAd, new { @class = "form-control", placeholder = "Kullanıcı adınız" })
+                </li>
+                <li>
+                    <span class="title" aria-hidden="true">ŞİFRE</span>
+                    @Html.TextBoxFor(model => model.Sifre, new { @class = "form-control", placeholder = "Şifreniz", type = "password" })
+                </li>
+                <li><button type="submit" class="formSubmit">Giriş</button></li>
+            </ul>
+        </div><!--.formBox-->
+    </div><!--.container-->
+
+}
+
